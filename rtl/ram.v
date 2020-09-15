@@ -41,8 +41,6 @@ module ram(
         end else begin
             if (we_i == `WriteEnable) begin
                 _ram[addr_i[31:2]] <= data_i;
-                $display("ram addr %x", addr_i[31:2]);
-                $display("ram data %x", data_i);
             end
         end
     end
