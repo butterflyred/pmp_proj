@@ -1,5 +1,5 @@
 
-RISCV_PATH := /home/ting199708/.local/riscv32
+RISCV_PATH := /opt/riscv32
 
 RISCV_GCC     := $(abspath $(RISCV_PATH)/bin/riscv32-unknown-elf-gcc)
 RISCV_AS      := $(abspath $(RISCV_PATH)/bin/riscv32-unknown-elf-as)
