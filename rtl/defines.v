@@ -139,6 +139,7 @@
 `define CSR_MTVEC   12'h305
 `define CSR_MCAUSE  12'h342
 `define CSR_MEPC    12'h341
+`define CSR_MSTATUS 12'h300
 
 `define RomNum 2048  // rom depth(how many words)
 
@@ -156,3 +157,30 @@
 `define RegWidth 32
 `define RegNum 32        // reg num
 `define RegNumLog2 5
+
+
+
+`define U_MODE 2'b00
+`define S_MODE 2'b01
+`define M_MODE 2'b11
+
+`define CSR_PMPCFG0 12'h3a0
+`define CSR_PMPCFG1 12'h3a1
+`define CSR_PMPCFG2 12'h3a2
+`define CSR_PMPCFG3 12'h3a3
+`define CSR_PMPADDR0 12'h3b0
+`define CSR_PMPADDR1 12'h3b1
+`define CSR_PMPADDR2 12'h3b2
+`define CSR_PMPADDR3 12'h3b3
+`define CSR_PMPADDR4 12'h3b4
+`define CSR_PMPADDR5 12'h3b5
+`define CSR_PMPADDR6 12'h3b6
+`define CSR_PMPADDR7 12'h3b7
+`define CSR_PMPADDR8 12'h3b8
+`define CSR_PMPADDR9 12'h3b9
+`define CSR_PMPADDR10 12'h3ba
+`define CSR_PMPADDR11 12'h3bb
+`define CSR_PMPADDR12 12'h3bc
+`define CSR_PMPADDR13 12'h3bd
+`define CSR_PMPADDR14 12'h3be
+`define CSR_PMPADDR15 12'h3bf

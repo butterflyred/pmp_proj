@@ -18,39 +18,39 @@
 
 
 // core local interruptor module
-// ºËĞÄÖĞ¶Ï¹ÜÀí¡¢ÖÙ²ÃÄ£¿é
+// æ ¸å¿ƒä¸­æ–­ç®¡ç†ã€ä»²è£æ¨¡å—
 module clint(
 
     input wire clk,
     input wire rst,
 
     // from core
-    input wire[`INT_BUS] int_flag_i,         // ÖĞ¶ÏÊäÈëĞÅºÅ
-
+    input wire[`INT_BUS] int_flag_i,         // ä¸­æ–­è¾“å…¥ä¿¡å·
+    input wire           int_pmp_flag_i,
     // from id
-    input wire[`InstBus] inst_i,             // Ö¸ÁîÄÚÈİ
-    input wire[`InstAddrBus] inst_addr_i,    // Ö¸ÁîµØÖ·
+    input wire[`InstBus] inst_i,             // æŒ‡ä»¤å†…å®¹
+    input wire[`InstAddrBus] inst_addr_i,    // æŒ‡ä»¤åœ°å€
 
     // from ctrl
-    input wire[`Hold_Flag_Bus] hold_flag_i,  // Á÷Ë®ÏßÔİÍ£±êÖ¾
+    input wire[`Hold_Flag_Bus] hold_flag_i,  // æµæ°´çº¿æš‚åœæ ‡å¿—
 
     // from csr_reg
-    input wire[`RegBus] data_i,              // CSR¼Ä´æÆ÷ÊäÈëÊı¾İ
+    input wire[`RegBus] data_i,              // CSRå¯„å­˜å™¨è¾“å…¥æ•°æ®
 
     // to csr_reg
-    output reg we_o,                         // Ğ´CSR¼Ä´æÆ÷±êÖ¾
-    output reg[`MemAddrBus] waddr_o,         // Ğ´CSR¼Ä´æÆ÷µØÖ·
-    output reg[`MemAddrBus] raddr_o,         // ¶ÁCSR¼Ä´æÆ÷µØÖ·
-    output reg[`RegBus] data_o,              // Ğ´CSR¼Ä´æÆ÷Êı¾İ
+    output reg we_o,                         // å†™CSRå¯„å­˜å™¨æ ‡å¿—
+    output reg[`MemAddrBus] waddr_o,         // å†™CSRå¯„å­˜å™¨åœ°å€
+    output reg[`MemAddrBus] raddr_o,         // è¯»CSRå¯„å­˜å™¨åœ°å€
+    output reg[`RegBus] data_o,              // å†™CSRå¯„å­˜å™¨æ•°æ®
 
     // to ex
-    output reg[`InstAddrBus] int_addr_o,     // ±»ÖĞ¶ÏµÄÖ¸ÁîµØÖ·
-    output reg int_assert_o                  // ÖĞ¶Ï±êÖ¾
+    output reg[`InstAddrBus] int_addr_o,     // è¢«ä¸­æ–­çš„æŒ‡ä»¤åœ°å€
+    output reg int_assert_o                  // ä¸­æ–­æ ‡å¿—
 
     );
 
 
-    // ×´Ì¬¶¨Òå
+    // çŠ¶æ€å®šä¹‰
     localparam STATE_IDLE      = 4'b0001;
     localparam STATE_ASSERT    = 4'b0010;
     localparam STATE_WAIT_MRET = 4'b0100;
@@ -60,7 +60,7 @@ module clint(
     reg[3:0] next_state;
 
 
-    // ×´Ì¬¸üĞÂ
+    // çŠ¶æ€æ›´æ–°
     always @ (posedge clk) begin
         if (rst == `RstEnable) begin
             state <= STATE_IDLE;
@@ -69,16 +69,16 @@ module clint(
         end
     end
 
-    // ×´Ì¬ÇĞ»»
+    // çŠ¶æ€åˆ‡æ¢
     always @ (*) begin
         if (rst == `RstEnable) begin
             next_state <= STATE_IDLE;
         end else begin
             case (state)
                 STATE_IDLE: begin
-                    // Ä¿Ç°Ö»ÒªÍâÉèÓĞÖĞ¶ÏĞÅºÅ·¢³ö¾ÍÁ¢ÂíÏìÓ¦.
-                    // ºóĞøÔö¼ÓÖĞ¶ÏÓÅÏÈ¼¶(Ç¶Ì×)Ê±ĞèÒªĞŞ¸ÄÕâÀïµÄÂß¼­
-                    if (int_flag_i != `INT_NONE) begin
+                    // ç›®å‰åªè¦å¤–è®¾æœ‰ä¸­æ–­ä¿¡å·å‘å‡ºå°±ç«‹é©¬å“åº”.
+                    // åç»­å¢åŠ ä¸­æ–­ä¼˜å…ˆçº§(åµŒå¥—)æ—¶éœ€è¦ä¿®æ”¹è¿™é‡Œçš„é€»è¾‘
+                    if (int_flag_i != `INT_NONE || int_pmp_flag_i) begin
                         next_state <= STATE_ASSERT;
                     end else begin
                         next_state <= STATE_IDLE;
@@ -104,7 +104,7 @@ module clint(
         end
     end
 
-    // ¸ù¾İ²»Í¬µÄ×´Ì¬£¬¶ÁÈ¡¶ÔÓ¦µÄCSR¼Ä´æÆ÷
+    // æ ¹æ®ä¸åŒçš„çŠ¶æ€ï¼Œè¯»å–å¯¹åº”çš„CSRå¯„å­˜å™¨
     always @ (*) begin
         if (rst == `RstEnable) begin
             raddr_o <= `ZeroWord;
@@ -129,8 +129,8 @@ module clint(
         end
     end
 
-    // ·¢³öÖĞ¶ÏĞÅºÅ
-    // ÖĞ¶ÏÏìÓ¦ºÍÖĞ¶Ï·µ»ØÊ±¶¼Òª·¢
+    // å‘å‡ºä¸­æ–­ä¿¡å·
+    // ä¸­æ–­å“åº”å’Œä¸­æ–­è¿”å›æ—¶éƒ½è¦å‘
     always @ (posedge clk) begin
         if (rst == `RstEnable) begin
             int_assert_o <= `INT_DEASSERT;
@@ -153,7 +153,7 @@ module clint(
         end
     end
 
-    // ¸ù¾İ²»Í¬µÄ×´Ì¬£¬Ğ´¶ÔÓ¦µÄCSR¼Ä´æÆ÷
+    // æ ¹æ®ä¸åŒçš„çŠ¶æ€ï¼Œå†™å¯¹åº”çš„CSRå¯„å­˜å™¨
     always @ (posedge clk) begin
         if (rst == `RstEnable) begin
             we_o <= `WriteDisable;

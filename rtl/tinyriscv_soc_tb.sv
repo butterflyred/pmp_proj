@@ -2,6 +2,32 @@
 
 `include "defines.v"
 
+`include "clint.v"    
+`include "ctrl.v"     
+`include "div.v"  
+`include "gpio.v"   
+`include "id.v"
+`include "jtag_dm.v"      
+`include "jtag_top.v"
+`include "pmp_cfg_block.sv"  
+`include "ram.v"   
+`include "rib.v"  
+`include "timer.v"              
+`include "tinyriscv_soc_top.v"  
+`include "uart_tx.v"
+`include "csr_reg.sv"  
+`include "defines.v"  
+`include "ex.v"   
+`include "id_ex.v"  
+`include "if_id.v"
+`include "jtag_driver.v"
+`include "pc_reg.v"       
+`include "PMP.sv"            
+`include "regs.v"  
+`include "rom.v"  
+`include "tinyriscv_soc_tb.sv"  
+`include "tinyriscv.sv"
+
 
 `define TEST_PROG  1
 //`define TEST_JTAG  1
@@ -20,7 +46,7 @@ module tinyriscv_soc_tb;
     wire[`RegBus] x26 = tinyriscv_soc_top_0.u_tinyriscv.u_regs.regs[26];
     wire[`RegBus] x27 = tinyriscv_soc_top_0.u_tinyriscv.u_regs.regs[27];
 
-    integer r;
+    integer r,k,j;
 
 `ifdef TEST_JTAG
     reg TCK;
@@ -76,6 +102,12 @@ module tinyriscv_soc_tb;
             $display("fail testnum = %2d", x3);
             for (r = 0; r < 32; r++)
                 $display("x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_regs.regs[r]);
+            $display("csr privilege: x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.privilege);
+            $display("exception: x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.pmp_exception);
+            for (j = 0; j < 16; j++)begin
+                $display("pmpaddr x%2d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpaddr[j]);
+                $display("pmpcfg x%2d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpcfg[j]);
+            end
         end
 `endif
 
@@ -478,8 +510,26 @@ module tinyriscv_soc_tb;
 
     // sim timeout
     initial begin
-        #500000
+        #1000000
         $display("Time Out.");
+        $display("~~~~~~~~~~~~~~~~~~~ TEST_FAIL ~~~~~~~~~~~~~~~~~~~~");
+        $display("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        $display("~~~~~~~~~~######    ##       #    #     ~~~~~~~~~~");
+        $display("~~~~~~~~~~#        #  #      #    #     ~~~~~~~~~~");
+        $display("~~~~~~~~~~#####   #    #     #    #     ~~~~~~~~~~");
+        $display("~~~~~~~~~~#       ######     #    #     ~~~~~~~~~~");
+        $display("~~~~~~~~~~#       #    #     #    #     ~~~~~~~~~~");
+        $display("~~~~~~~~~~#       #    #     #    ######~~~~~~~~~~");
+        $display("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        $display("fail testnum = %2d", x3);
+        for (r = 0; r < 32; r++)
+            $display("x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_regs.regs[r]);
+        $display("csr privilege: x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.privilege);
+        $display("exception: x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.pmp_exception);
+        for (j = 0; j < 16; j++)begin
+            $display("pmpaddr x%2d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpaddr[j]);
+            $display("pmpcfg x%2d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpcfg[j]);
+        end
         $finish;
     end
 
