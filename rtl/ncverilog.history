@@ -1,1 +1,16 @@
-s1(30Oct2020:17:41:56):  ncverilog +access+r tinyriscv_soc_tb.sv 
+s1(16Nov2020:00:26:27):  ncverilog tinyriscv_soc_tb.sv 
+s2(16Nov2020:00:29:23):  ncverilog tinyriscv_soc_tb.sv 
+s3(16Nov2020:00:40:49):  ncverilog tinyriscv_soc_tb.sv 
+s4(16Nov2020:00:41:31):  ncverilog tinyriscv_soc_tb.sv 
+s5(16Nov2020:00:42:05):  ncverilog tinyriscv_soc_tb.sv 
+s6(16Nov2020:00:42:58):  ncverilog tinyriscv_soc_tb.sv 
+s7(16Nov2020:00:56:03):  ncverilog tinyriscv_soc_tb.sv 
+s8(16Nov2020:01:08:35):  ncverilog tinyriscv_soc_tb.sv 
+s9(16Nov2020:01:19:16):  ncverilog tinyriscv_soc_tb.sv 
+s10(16Nov2020:01:20:57):  ncverilog tinyriscv_soc_tb.sv 
+s11(16Nov2020:01:22:11):  ncverilog tinyriscv_soc_tb.sv 
+s12(16Nov2020:01:22:50):  ncverilog tinyriscv_soc_tb.sv 
+s13(16Nov2020:01:25:51):  ncverilog tinyriscv_soc_tb.sv 
+s14(16Nov2020:01:26:24):  ncverilog tinyriscv_soc_tb.sv 
+s15(16Nov2020:01:27:23):  ncverilog tinyriscv_soc_tb.sv 
+s16(16Nov2020:01:27:52):  ncverilog tinyriscv_soc_tb.sv 

@@ -138,7 +138,7 @@ module tinyriscv_soc_top(
             succ <= ~u_tinyriscv.u_regs.regs[27];  // when = 1, run succ, otherwise fail
         end
     end
-
+    wire pmp_exception;
     // tinyriscv处理器核模块例化
     tinyriscv u_tinyriscv(
         .clk(clk),
@@ -161,7 +161,8 @@ module tinyriscv_soc_top(
         .jtag_halt_flag_i(jtag_halt_req_o),
         .jtag_reset_flag_i(jtag_reset_req_o),
 
-        .int_i(int_flag)
+        .int_i(int_flag),
+        .pmp_exception(pmp_exception)
     );
 
     // rom模块例化
@@ -185,7 +186,8 @@ module tinyriscv_soc_top(
         .data_i(s1_data_o),
         .req_i(s1_req_o),
         .data_o(s1_data_i),
-        .ack_o(s1_ack_i)
+        .ack_o(s1_ack_i),
+        .pmp_exception(pmp_exception)
     );
 
     // timer模块例化

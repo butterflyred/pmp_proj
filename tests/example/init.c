@@ -19,7 +19,7 @@ void trap_handler(uint32_t mcause)
 void _init()
 {
     write_csr(mtvec, &trap_entry);
-    write_csr(mstatus,0x3); // privilege
+    write_csr(mstatus,0x2); // privilege
     write_csr(pmpcfg0,0b00011101000111010001110100011101);  // napot & no write 00011101
     write_csr(pmpcfg1,0b00011101000111010001110100011101);
     write_csr(pmpcfg2,0b00011101000111010001110100011101);

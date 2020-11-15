@@ -28,7 +28,8 @@ module ram(
     input wire req_i,
 
     output reg[`MemBus] data_o,        // read data
-    output reg ack_o
+    output reg ack_o,
+    input pmp_exception
 
     );
 
@@ -39,14 +40,14 @@ module ram(
         if (rst == `RstEnable) begin
             ack_o <= `RIB_ACK;
         end else begin
-            if (we_i == `WriteEnable) begin
+            if (we_i == `WriteEnable && pmp_exception) begin
                 _ram[addr_i[31:2]] <= data_i;
             end
         end
     end
 
     always @ (*) begin
-        if (rst == `RstEnable) begin
+        if (rst == `RstEnable || pmp_exception) begin
             data_o <= `ZeroWord;
         end else begin
             data_o <= _ram[addr_i[31:2]];

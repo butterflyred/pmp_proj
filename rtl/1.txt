@@ -1,4 +1,7 @@
 ncverilog(64): 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+Recompiling... reason: file './PMP.sv' is newer than expected.
+	expected: Sun Nov 15 17:14:29 2020
+	actual:   Mon Nov 16 01:15:35 2020
 file: tinyriscv_soc_tb.sv
 // 核心中断管理、仲裁模块
    |
@@ -9326,412 +9329,412 @@ ncvlog: *W,NONPRT (tinyriscv_soc_top.v,142|39): non-printable character (0x96) i
 (`include file: tinyriscv_soc_top.v line 142, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
           |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|10): non-printable character (0xe6) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|10): non-printable character (0xe6) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
            |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|11): non-printable character (0xa8) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|11): non-printable character (0xa8) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
             |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|12): non-printable character (0xa1) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|12): non-printable character (0xa1) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
              |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|13): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|13): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
               |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|14): non-printable character (0x9d) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|14): non-printable character (0x9d) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
                |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|15): non-printable character (0x97) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|15): non-printable character (0x97) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
                 |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|16): non-printable character (0xe4) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|16): non-printable character (0xe4) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
                  |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|17): non-printable character (0xbe) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|17): non-printable character (0xbe) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
                   |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|18): non-printable character (0x8b) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|18): non-printable character (0x8b) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
                    |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|19): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|19): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
                     |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|20): non-printable character (0x8c) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|20): non-printable character (0x8c) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // rom模块例化
                      |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,167|21): non-printable character (0x96) ignored.
-(`include file: tinyriscv_soc_top.v line 167, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,168|21): non-printable character (0x96) ignored.
+(`include file: tinyriscv_soc_top.v line 168, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
           |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|10): non-printable character (0xe6) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|10): non-printable character (0xe6) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
            |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|11): non-printable character (0xa8) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|11): non-printable character (0xa8) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
             |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|12): non-printable character (0xa1) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|12): non-printable character (0xa1) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
              |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|13): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|13): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
               |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|14): non-printable character (0x9d) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|14): non-printable character (0x9d) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
                |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|15): non-printable character (0x97) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|15): non-printable character (0x97) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
                 |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|16): non-printable character (0xe4) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|16): non-printable character (0xe4) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
                  |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|17): non-printable character (0xbe) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|17): non-printable character (0xbe) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
                   |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|18): non-printable character (0x8b) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|18): non-printable character (0x8b) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
                    |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|19): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|19): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
                     |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|20): non-printable character (0x8c) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|20): non-printable character (0x8c) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // ram模块例化
                      |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,179|21): non-printable character (0x96) ignored.
-(`include file: tinyriscv_soc_top.v line 179, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,180|21): non-printable character (0x96) ignored.
+(`include file: tinyriscv_soc_top.v line 180, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
             |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|12): non-printable character (0xe6) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|12): non-printable character (0xe6) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
              |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|13): non-printable character (0xa8) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|13): non-printable character (0xa8) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
               |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|14): non-printable character (0xa1) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|14): non-printable character (0xa1) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|15): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|15): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                 |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|16): non-printable character (0x9d) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|16): non-printable character (0x9d) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                  |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|17): non-printable character (0x97) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|17): non-printable character (0x97) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                   |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|18): non-printable character (0xe4) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|18): non-printable character (0xe4) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                    |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|19): non-printable character (0xbe) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|19): non-printable character (0xbe) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                     |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|20): non-printable character (0x8b) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|20): non-printable character (0x8b) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                      |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|21): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|21): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                       |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|22): non-printable character (0x8c) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|22): non-printable character (0x8c) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // timer模块例化
                        |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,191|23): non-printable character (0x96) ignored.
-(`include file: tinyriscv_soc_top.v line 191, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,193|23): non-printable character (0x96) ignored.
+(`include file: tinyriscv_soc_top.v line 193, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
               |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|14): non-printable character (0xe6) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|14): non-printable character (0xe6) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|15): non-printable character (0xa8) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|15): non-printable character (0xa8) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                 |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|16): non-printable character (0xa1) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|16): non-printable character (0xa1) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                  |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|17): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|17): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                   |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|18): non-printable character (0x9d) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|18): non-printable character (0x9d) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                    |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|19): non-printable character (0x97) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|19): non-printable character (0x97) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                     |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|20): non-printable character (0xe4) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|20): non-printable character (0xe4) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                      |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|21): non-printable character (0xbe) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|21): non-printable character (0xbe) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                       |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|22): non-printable character (0x8b) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|22): non-printable character (0x8b) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                        |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|23): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|23): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                         |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|24): non-printable character (0x8c) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|24): non-printable character (0x8c) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // uart_tx模块例化
                          |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,204|25): non-printable character (0x96) ignored.
-(`include file: tinyriscv_soc_top.v line 204, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,206|25): non-printable character (0x96) ignored.
+(`include file: tinyriscv_soc_top.v line 206, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
            |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|11): non-printable character (0xe6) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|11): non-printable character (0xe6) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
             |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|12): non-printable character (0xa8) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|12): non-printable character (0xa8) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
              |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|13): non-printable character (0xa1) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|13): non-printable character (0xa1) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
               |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|14): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|14): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
                |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|15): non-printable character (0x9d) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|15): non-printable character (0x9d) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
                 |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|16): non-printable character (0x97) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|16): non-printable character (0x97) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
                  |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|17): non-printable character (0xe4) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|17): non-printable character (0xe4) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
                   |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|18): non-printable character (0xbe) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|18): non-printable character (0xbe) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
                    |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|19): non-printable character (0x8b) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|19): non-printable character (0x8b) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
                     |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|20): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|20): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
                      |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|21): non-printable character (0x8c) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|21): non-printable character (0x8c) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // gpio模块例化
                       |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,217|22): non-printable character (0x96) ignored.
-(`include file: tinyriscv_soc_top.v line 217, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,219|22): non-printable character (0x96) ignored.
+(`include file: tinyriscv_soc_top.v line 219, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
           |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|10): non-printable character (0xe6) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|10): non-printable character (0xe6) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
            |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|11): non-printable character (0xa8) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|11): non-printable character (0xa8) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
             |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|12): non-printable character (0xa1) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|12): non-printable character (0xa1) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
              |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|13): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|13): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
               |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|14): non-printable character (0x9d) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|14): non-printable character (0x9d) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
                |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|15): non-printable character (0x97) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|15): non-printable character (0x97) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
                 |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|16): non-printable character (0xe4) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|16): non-printable character (0xe4) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
                  |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|17): non-printable character (0xbe) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|17): non-printable character (0xbe) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
                   |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|18): non-printable character (0x8b) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|18): non-printable character (0x8b) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
                    |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|19): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|19): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
                     |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|20): non-printable character (0x8c) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|20): non-printable character (0x8c) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // rib模块例化
                      |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,230|21): non-printable character (0x96) ignored.
-(`include file: tinyriscv_soc_top.v line 230, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,232|21): non-printable character (0x96) ignored.
+(`include file: tinyriscv_soc_top.v line 232, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
            |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|11): non-printable character (0xe6) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|11): non-printable character (0xe6) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
             |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|12): non-printable character (0xa8) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|12): non-printable character (0xa8) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
              |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|13): non-printable character (0xa1) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|13): non-printable character (0xa1) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
               |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|14): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|14): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|15): non-printable character (0x9d) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|15): non-printable character (0x9d) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                 |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|16): non-printable character (0x97) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|16): non-printable character (0x97) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                  |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|17): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|17): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                   |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|18): non-printable character (0xa4) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|18): non-printable character (0xa4) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                    |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|19): non-printable character (0x8d) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|19): non-printable character (0x8d) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                     |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|20): non-printable character (0xe4) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|20): non-printable character (0xe4) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                      |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|21): non-printable character (0xbd) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|21): non-printable character (0xbd) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                       |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|22): non-printable character (0x8d) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|22): non-printable character (0x8d) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                        |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|23): non-printable character (0xe9) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|23): non-printable character (0xe9) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                         |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|24): non-printable character (0x80) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|24): non-printable character (0x80) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                          |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|25): non-printable character (0xbb) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|25): non-printable character (0xbb) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                           |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|26): non-printable character (0xe8) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|26): non-printable character (0xe8) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                            |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|27): non-printable character (0xbe) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|27): non-printable character (0xbe) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块复位逻辑
                             |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,302|28): non-printable character (0x91) ignored.
-(`include file: tinyriscv_soc_top.v line 302, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,304|28): non-printable character (0x91) ignored.
+(`include file: tinyriscv_soc_top.v line 304, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
            |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|11): non-printable character (0xe6) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|11): non-printable character (0xe6) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
             |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|12): non-printable character (0xa8) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|12): non-printable character (0xa8) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
              |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|13): non-printable character (0xa1) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|13): non-printable character (0xa1) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
               |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|14): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|14): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
                |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|15): non-printable character (0x9d) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|15): non-printable character (0x9d) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
                 |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|16): non-printable character (0x97) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|16): non-printable character (0x97) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
                  |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|17): non-printable character (0xe4) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|17): non-printable character (0xe4) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
                   |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|18): non-printable character (0xbe) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|18): non-printable character (0xbe) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
                    |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|19): non-printable character (0x8b) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|19): non-printable character (0x8b) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
                     |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|20): non-printable character (0xe5) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|20): non-printable character (0xe5) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
                      |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|21): non-printable character (0x8c) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|21): non-printable character (0x8c) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
     // jtag模块例化
                       |
-ncvlog: *W,NONPRT (tinyriscv_soc_top.v,317|22): non-printable character (0x96) ignored.
-(`include file: tinyriscv_soc_top.v line 317, file: tinyriscv_soc_tb.sv line 16)
+ncvlog: *W,NONPRT (tinyriscv_soc_top.v,319|22): non-printable character (0x96) ignored.
+(`include file: tinyriscv_soc_top.v line 319, file: tinyriscv_soc_tb.sv line 16)
 // CSR寄存器模块
       |
 ncvlog: *W,NONPRT (csr_reg.sv,19|6): non-printable character (0xe5) ignored.
@@ -10104,14 +10107,6 @@ ncvlog: *W,NONPRT (csr_reg.sv,98|45): non-printable character (0xbd) ignored.
                                               |
 ncvlog: *W,NONPRT (csr_reg.sv,98|46): non-printable character (0x9c) ignored.
 (`include file: csr_reg.sv line 98, file: tinyriscv_soc_tb.sv line 18)
-                    `CSR_PRIVLV: begin
-                              |
-ncvlog: *E,NOTDIR (csr_reg.sv,104|30): `CSR_PRIVLV: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-(`include file: csr_reg.sv line 104, file: tinyriscv_soc_tb.sv line 18)
-                    `CSR_PRIVLV: begin
-                                     |
-ncvlog: *E,EXPIDN (csr_reg.sv,104|37): expecting an identifier [SystemVerilog].
-(`include file: csr_reg.sv line 104, file: tinyriscv_soc_tb.sv line 18)
             // clint模块写操作
                     |
 ncvlog: *W,NONPRT (csr_reg.sv,189|20): non-printable character (0xe6) ignored.
@@ -10172,14 +10167,6 @@ ncvlog: *W,NONPRT (csr_reg.sv,189|33): non-printable character (0xbd) ignored.
                                   |
 ncvlog: *W,NONPRT (csr_reg.sv,189|34): non-printable character (0x9c) ignored.
 (`include file: csr_reg.sv line 189, file: tinyriscv_soc_tb.sv line 18)
-                    `CSR_PRIVLV: begin
-                              |
-ncvlog: *E,NOTDIR (csr_reg.sv,195|30): `CSR_PRIVLV: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-(`include file: csr_reg.sv line 195, file: tinyriscv_soc_tb.sv line 18)
-                    `CSR_PRIVLV: begin
-                                     |
-ncvlog: *E,EXPIDN (csr_reg.sv,195|37): expecting an identifier [SystemVerilog].
-(`include file: csr_reg.sv line 195, file: tinyriscv_soc_tb.sv line 18)
     // ex模块读CSR寄存器
          |
 ncvlog: *W,NONPRT (csr_reg.sv,285|9): non-printable character (0xe6) ignored.
@@ -10252,14 +10239,6 @@ ncvlog: *W,NONPRT (csr_reg.sv,285|28): non-printable character (0x99) ignored.
                              |
 ncvlog: *W,NONPRT (csr_reg.sv,285|29): non-printable character (0xa8) ignored.
 (`include file: csr_reg.sv line 285, file: tinyriscv_soc_tb.sv line 18)
-                `CSR_PRIVLV: begin
-                          |
-ncvlog: *E,NOTDIR (csr_reg.sv,300|26): `CSR_PRIVLV: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-(`include file: csr_reg.sv line 300, file: tinyriscv_soc_tb.sv line 18)
-                `CSR_PRIVLV: begin
-                                 |
-ncvlog: *E,EXPIDN (csr_reg.sv,300|33): expecting an identifier [SystemVerilog].
-(`include file: csr_reg.sv line 300, file: tinyriscv_soc_tb.sv line 18)
     // clint模块读CSR寄存器
             |
 ncvlog: *W,NONPRT (csr_reg.sv,389|12): non-printable character (0xe6) ignored.
@@ -10332,16 +10311,6 @@ ncvlog: *W,NONPRT (csr_reg.sv,389|31): non-printable character (0x99) ignored.
                                 |
 ncvlog: *W,NONPRT (csr_reg.sv,389|32): non-printable character (0xa8) ignored.
 (`include file: csr_reg.sv line 389, file: tinyriscv_soc_tb.sv line 18)
-                `CSR_PRIVLV: begin
-                          |
-ncvlog: *E,NOTDIR (csr_reg.sv,404|26): `CSR_PRIVLV: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
-(`include file: csr_reg.sv line 404, file: tinyriscv_soc_tb.sv line 18)
-                `CSR_PRIVLV: begin
-                                 |
-ncvlog: *E,EXPIDN (csr_reg.sv,404|33): expecting an identifier [SystemVerilog].
-(`include file: csr_reg.sv line 404, file: tinyriscv_soc_tb.sv line 18)
-	module worklib.csr_reg:sv
-		errors: 8, warnings: 129
 // 执行模块
    |
 ncvlog: *W,NONPRT (ex.v,19|3): non-printable character (0xe6) ignored.
@@ -16654,6 +16623,10 @@ ncvlog: *W,NONPRT (pc_reg.v,45|18): non-printable character (0x8a) ignored.
                    |
 ncvlog: *W,NONPRT (pc_reg.v,45|19): non-printable character (0xa0) ignored.
 (`include file: pc_reg.v line 45, file: tinyriscv_soc_tb.sv line 24)
+			logic check_ex = 1'b0;
+			               |
+ncvlog: *W,VARIST (PMP.sv,149|18): Local static variable with initializer requires 'static' keyword.
+(`include file: PMP.sv line 149, file: tinyriscv_soc_tb.sv line 25)
 // 通用寄存器模块
    |
 ncvlog: *W,NONPRT (regs.v,19|3): non-printable character (0xe9) ignored.
@@ -19645,53 +19618,53 @@ ncvlog: *W,NONPRT (tinyriscv.sv,41|66): non-printable character (0xbf) ignored.
                                                                    |
 ncvlog: *W,NONPRT (tinyriscv.sv,41|67): non-printable character (0x97) ignored.
 (`include file: tinyriscv.sv line 41, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
-                                                  |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|50): non-printable character (0xe4) ignored.
-(`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                    |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|51): non-printable character (0xb8) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|51): non-printable character (0xe4) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                     |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|52): non-printable character (0xad) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|52): non-printable character (0xb8) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                      |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|53): non-printable character (0xe6) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|53): non-printable character (0xad) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                       |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|54): non-printable character (0x96) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|54): non-printable character (0xe6) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                        |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|55): non-printable character (0xad) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|55): non-printable character (0x96) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                         |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|56): non-printable character (0xe4) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|56): non-printable character (0xad) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                          |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|57): non-printable character (0xbf) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|57): non-printable character (0xe4) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                           |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|58): non-printable character (0xa1) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|58): non-printable character (0xbf) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                            |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|59): non-printable character (0xe5) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|59): non-printable character (0xa1) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                             |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|60): non-printable character (0x8f) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|60): non-printable character (0xe5) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
-    input wire[`INT_BUS] int_i                 // 中断信号
+    input wire[`INT_BUS] int_i,                 // 中断信号
                                                              |
-ncvlog: *W,NONPRT (tinyriscv.sv,43|61): non-printable character (0xb7) ignored.
+ncvlog: *W,NONPRT (tinyriscv.sv,43|61): non-printable character (0x8f) ignored.
+(`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
+    input wire[`INT_BUS] int_i,                 // 中断信号
+                                                              |
+ncvlog: *W,NONPRT (tinyriscv.sv,43|62): non-printable character (0xb7) ignored.
 (`include file: tinyriscv.sv line 43, file: tinyriscv_soc_tb.sv line 29)
     // pc_reg模块输出信号
              |
@@ -20895,4 +20868,87 @@ ncvlog: *W,NONPRT (tinyriscv.sv,327|23): non-printable character (0x96) ignored.
 (`include file: tinyriscv.sv line 327, file: tinyriscv_soc_tb.sv line 29)
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 358
-ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+    tinyriscv_soc_top tinyriscv_soc_top_0(
+                                        |
+ncelab: *W,CUVWSP (./tinyriscv_soc_tb.sv,557|40): 6 output ports were not connected:
+ncelab: (./tinyriscv_soc_top.v,25): over
+ncelab: (./tinyriscv_soc_top.v,26): succ
+ncelab: (./tinyriscv_soc_top.v,28): halted_ind
+ncelab: (./tinyriscv_soc_top.v,30): tx_pin
+ncelab: (./tinyriscv_soc_top.v,31): io_pin
+ncelab: (./tinyriscv_soc_top.v,36): jtag_TDO
+
+    tinyriscv_soc_top tinyriscv_soc_top_0(
+                                        |
+ncelab: *W,CUVWSI (./tinyriscv_soc_tb.sv,557|40): 3 input ports were not connected:
+ncelab: (./tinyriscv_soc_top.v,33): jtag_TCK
+ncelab: (./tinyriscv_soc_top.v,34): jtag_TMS
+ncelab: (./tinyriscv_soc_top.v,35): jtag_TDI
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        .io_req(1),
+                |
+ncelab: *W,CUVMPW (./tinyriscv.sv,361|16): port sizes differ in port connection (32/1).
+        .io_r((ex_mem_we_o == `WriteEnable)? 0 : 1),
+                                           |
+ncelab: *W,CUVMPW (./tinyriscv.sv,364|43): port sizes differ in port connection (32/1).
+        .io_w((ex_mem_we_o == `WriteEnable)? 1 : 0),
+                                           |
+ncelab: *W,CUVMPW (./tinyriscv.sv,365|43): port sizes differ in port connection (32/1).
+        .io_x(0),
+              |
+ncelab: *W,CUVMPW (./tinyriscv.sv,366|14): port sizes differ in port connection (32/1).
+	pmp_cfg_block pmp0 (.address(io_addr[33:2]), .pmp_pre_address(0), .mode(io_pmpcfg[0].a), .pmp_address(io_pmpaddr[0]), .match(match[0]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,39|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp1 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[0]), .mode(io_pmpcfg[1].a), .pmp_address(io_pmpaddr[1]), .match(match[1]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,40|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp2 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[1]), .mode(io_pmpcfg[2].a), .pmp_address(io_pmpaddr[2]), .match(match[2]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,41|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp3 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[2]), .mode(io_pmpcfg[3].a), .pmp_address(io_pmpaddr[3]), .match(match[3]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,42|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp4 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[3]), .mode(io_pmpcfg[4].a), .pmp_address(io_pmpaddr[4]), .match(match[4]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,43|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp5 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[4]), .mode(io_pmpcfg[5].a), .pmp_address(io_pmpaddr[5]), .match(match[5]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,44|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp6 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[5]), .mode(io_pmpcfg[6].a), .pmp_address(io_pmpaddr[6]), .match(match[6]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,45|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp7 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[6]), .mode(io_pmpcfg[7].a), .pmp_address(io_pmpaddr[7]), .match(match[7]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,46|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp8 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[7]), .mode(io_pmpcfg[8].a), .pmp_address(io_pmpaddr[8]), .match(match[8]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,47|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp9 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[8]), .mode(io_pmpcfg[9].a), .pmp_address(io_pmpaddr[9]), .match(match[9]), .size(io_size));
+	                                   |
+ncelab: *W,CUVMPW (./PMP.sv,48|36): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp10 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[9]), .mode(io_pmpcfg[10].a), .pmp_address(io_pmpaddr[10]), .match(match[10]), .size(io_size));
+	                                    |
+ncelab: *W,CUVMPW (./PMP.sv,49|37): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp11 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[10]), .mode(io_pmpcfg[11].a), .pmp_address(io_pmpaddr[11]), .match(match[11]), .size(io_size));
+	                                    |
+ncelab: *W,CUVMPW (./PMP.sv,50|37): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp12 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[11]), .mode(io_pmpcfg[12].a), .pmp_address(io_pmpaddr[12]), .match(match[12]), .size(io_size));
+	                                    |
+ncelab: *W,CUVMPW (./PMP.sv,51|37): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp13 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[12]), .mode(io_pmpcfg[13].a), .pmp_address(io_pmpaddr[13]), .match(match[13]), .size(io_size));
+	                                    |
+ncelab: *W,CUVMPW (./PMP.sv,52|37): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp14 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[13]), .mode(io_pmpcfg[14].a), .pmp_address(io_pmpaddr[14]), .match(match[14]), .size(io_size));
+	                                    |
+ncelab: *W,CUVMPW (./PMP.sv,53|37): port sizes differ in port connection (32/34).
+	pmp_cfg_block pmp15 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[14]), .mode(io_pmpcfg[15].a), .pmp_address(io_pmpaddr[15]), .match(match[15]), .size(io_size));
+	                                    |
+ncelab: *W,CUVMPW (./PMP.sv,54|37): port sizes differ in port connection (32/34).
+	always_comb
+	          |
+ncelab: *E,MULAXX (./PMP.sv,143|11): Multiple drivers to always_comb output variable check_ex detected.
+ncverilog: *E,ELBERR: Error during elaboration (status 1), exiting.

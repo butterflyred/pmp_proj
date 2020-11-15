@@ -89,6 +89,15 @@ module tinyriscv_soc_tb;
             $display("~~~~~~~~~ #       #    #  #    #  #    #~~~~~~~~~");
             $display("~~~~~~~~~ #       #    #   ####    #### ~~~~~~~~~");
             $display("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            // for (r = 0; r < 1024; r++)
+            //     $display("x%d = 0x%x", r, tinyriscv_soc_top_0.u_ram._ram[r]);
+            $display("csr privilege             = %d", tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.privilege);
+            $display("exception = 0x%x", tinyriscv_soc_top_0.u_tinyriscv.pmp_exception);
+            for (j = 0; j < 16; j++)begin
+                $display("pmpaddr x%d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpaddr[j]);
+                $display("pmpcfg  x%d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpcfg[j]);
+            end
+
         end else begin
             $display("~~~~~~~~~~~~~~~~~~~ TEST_FAIL ~~~~~~~~~~~~~~~~~~~~");
             $display("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -100,13 +109,13 @@ module tinyriscv_soc_tb;
             $display("~~~~~~~~~~#       #    #     #    ######~~~~~~~~~~");
             $display("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             $display("fail testnum = %2d", x3);
-            for (r = 0; r < 32; r++)
-                $display("x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_regs.regs[r]);
-            $display("csr privilege: x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.privilege);
-            $display("exception: x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.pmp_exception);
+            // for (r = 0; r < 1024; r++)
+            //     $display("x%d = 0x%x", r, tinyriscv_soc_top_0.u_ram._ram[r]);
+            $display("csr privilege             = %d", tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.privilege);
+            $display("exception = 0x%x", tinyriscv_soc_top_0.u_tinyriscv.pmp_exception);
             for (j = 0; j < 16; j++)begin
-                $display("pmpaddr x%2d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpaddr[j]);
-                $display("pmpcfg x%2d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpcfg[j]);
+                $display("pmpaddr x%d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpaddr[j]);
+                $display("pmpcfg  x%d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpcfg[j]);
             end
         end
 `endif
@@ -523,12 +532,12 @@ module tinyriscv_soc_tb;
         $display("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         $display("fail testnum = %2d", x3);
         for (r = 0; r < 32; r++)
-            $display("x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_regs.regs[r]);
-        $display("csr privilege: x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.privilege);
-        $display("exception: x%2d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.pmp_exception);
+            $display("x%d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_regs.regs[r]);
+        $display("csr privilege: x%d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.privilege);
+        $display("exception: x%d = 0x%x", r, tinyriscv_soc_top_0.u_tinyriscv.pmp_exception);
         for (j = 0; j < 16; j++)begin
-            $display("pmpaddr x%2d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpaddr[j]);
-            $display("pmpcfg x%2d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpcfg[j]);
+            $display("pmpaddr x%d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpaddr[j]);
+            $display("pmpcfg x%d = %32b", j, tinyriscv_soc_top_0.u_tinyriscv.u_csr_reg.pmp_reg_q.pmpcfg[j]);
         end
         $finish;
     end
@@ -542,6 +551,7 @@ module tinyriscv_soc_tb;
     initial begin
         $dumpfile("tinyriscv_soc_tb.vcd");
         $dumpvars(0, tinyriscv_soc_tb);
+        $monitor("addr = %32b , data = %d",tinyriscv_soc_top_0.u_ram.addr_i,tinyriscv_soc_top_0.u_ram.data_i);
     end
 
     tinyriscv_soc_top tinyriscv_soc_top_0(

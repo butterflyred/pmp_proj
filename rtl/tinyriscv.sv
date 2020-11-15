@@ -40,8 +40,8 @@ module tinyriscv(
     input wire jtag_halt_flag_i,               // jtag暂停标志
     input wire jtag_reset_flag_i,              // jtag复位PC标志
 
-    input wire[`INT_BUS] int_i                 // 中断信号
-
+    input wire[`INT_BUS] int_i,                 // 中断信号
+    output logic pmp_exception
     );
     //pmp signals
     logic  [15:0] [7:0] pmp_pmpcfg;
@@ -54,7 +54,7 @@ module tinyriscv(
     logic                             pmp_r;
     logic                             pmp_w;
     logic                             pmp_x;
-    logic                             pmp_exception;
+    // logic                             pmp_exception;
 
     // pc_reg模块输出信号
 	wire[`InstAddrBus] pc_pc_o;
@@ -363,7 +363,7 @@ module tinyriscv(
         .io_size(2'd3),
         .io_r((ex_mem_we_o == `WriteEnable)? 0 : 1),
         .io_w((ex_mem_we_o == `WriteEnable)? 1 : 0),
-        .io_x(1),
+        .io_x(0),
         .io_exception(pmp_exception)
     );
 endmodule
