@@ -8,7 +8,7 @@
 
 int main()
 {
-    write_csr(mstatus,0x2); // privilege S
+    write_csr(mstatus,0x1); // privilege S
     write_csr(pmpcfg0  ,0b10011100100111001001110010011100); // lock=1 & napot & no write 10011100
     write_csr(pmpcfg1  ,0b10011100100111001001110010011100);
     write_csr(pmpcfg2  ,0b10011100100111001001110010011100);

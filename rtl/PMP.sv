@@ -37,24 +37,27 @@ module PMP #(
 	reg [4:0] priority_pmp;
 	reg io_exception_reg;
 
-	pmp_cfg_block pmp0 (.address(io_addr[33:2]), .pmp_pre_address(0), .mode(io_pmpcfg[0].a), .pmp_address(io_pmpaddr[0]), .match(match[0]), .size(io_size));
-	pmp_cfg_block pmp1 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[0]), .mode(io_pmpcfg[1].a), .pmp_address(io_pmpaddr[1]), .match(match[1]), .size(io_size));
-	pmp_cfg_block pmp2 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[1]), .mode(io_pmpcfg[2].a), .pmp_address(io_pmpaddr[2]), .match(match[2]), .size(io_size));
-	pmp_cfg_block pmp3 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[2]), .mode(io_pmpcfg[3].a), .pmp_address(io_pmpaddr[3]), .match(match[3]), .size(io_size));
-	pmp_cfg_block pmp4 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[3]), .mode(io_pmpcfg[4].a), .pmp_address(io_pmpaddr[4]), .match(match[4]), .size(io_size));
-	pmp_cfg_block pmp5 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[4]), .mode(io_pmpcfg[5].a), .pmp_address(io_pmpaddr[5]), .match(match[5]), .size(io_size));
-	pmp_cfg_block pmp6 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[5]), .mode(io_pmpcfg[6].a), .pmp_address(io_pmpaddr[6]), .match(match[6]), .size(io_size));
-	pmp_cfg_block pmp7 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[6]), .mode(io_pmpcfg[7].a), .pmp_address(io_pmpaddr[7]), .match(match[7]), .size(io_size));
-	pmp_cfg_block pmp8 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[7]), .mode(io_pmpcfg[8].a), .pmp_address(io_pmpaddr[8]), .match(match[8]), .size(io_size));
-	pmp_cfg_block pmp9 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[8]), .mode(io_pmpcfg[9].a), .pmp_address(io_pmpaddr[9]), .match(match[9]), .size(io_size));
-	pmp_cfg_block pmp10 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[9]), .mode(io_pmpcfg[10].a), .pmp_address(io_pmpaddr[10]), .match(match[10]), .size(io_size));
-	pmp_cfg_block pmp11 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[10]), .mode(io_pmpcfg[11].a), .pmp_address(io_pmpaddr[11]), .match(match[11]), .size(io_size));
-	pmp_cfg_block pmp12 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[11]), .mode(io_pmpcfg[12].a), .pmp_address(io_pmpaddr[12]), .match(match[12]), .size(io_size));
-	pmp_cfg_block pmp13 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[12]), .mode(io_pmpcfg[13].a), .pmp_address(io_pmpaddr[13]), .match(match[13]), .size(io_size));
-	pmp_cfg_block pmp14 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[13]), .mode(io_pmpcfg[14].a), .pmp_address(io_pmpaddr[14]), .match(match[14]), .size(io_size));
-	pmp_cfg_block pmp15 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[14]), .mode(io_pmpcfg[15].a), .pmp_address(io_pmpaddr[15]), .match(match[15]), .size(io_size));
+	pmp_cfg_block pmp0 (.address(io_addr), .pmp_pre_address(0), .mode(io_pmpcfg[0].a), .pmp_address(io_pmpaddr[0]), .match(match[0]), .size(io_size));
+	pmp_cfg_block pmp1 (.address(io_addr), .pmp_pre_address(io_pmpaddr[0]), .mode(io_pmpcfg[1].a), .pmp_address(io_pmpaddr[1]), .match(match[1]), .size(io_size));
+	pmp_cfg_block pmp2 (.address(io_addr), .pmp_pre_address(io_pmpaddr[1]), .mode(io_pmpcfg[2].a), .pmp_address(io_pmpaddr[2]), .match(match[2]), .size(io_size));
+	pmp_cfg_block pmp3 (.address(io_addr), .pmp_pre_address(io_pmpaddr[2]), .mode(io_pmpcfg[3].a), .pmp_address(io_pmpaddr[3]), .match(match[3]), .size(io_size));
+	pmp_cfg_block pmp4 (.address(io_addr), .pmp_pre_address(io_pmpaddr[3]), .mode(io_pmpcfg[4].a), .pmp_address(io_pmpaddr[4]), .match(match[4]), .size(io_size));
+	pmp_cfg_block pmp5 (.address(io_addr), .pmp_pre_address(io_pmpaddr[4]), .mode(io_pmpcfg[5].a), .pmp_address(io_pmpaddr[5]), .match(match[5]), .size(io_size));
+	pmp_cfg_block pmp6 (.address(io_addr), .pmp_pre_address(io_pmpaddr[5]), .mode(io_pmpcfg[6].a), .pmp_address(io_pmpaddr[6]), .match(match[6]), .size(io_size));
+	pmp_cfg_block pmp7 (.address(io_addr), .pmp_pre_address(io_pmpaddr[6]), .mode(io_pmpcfg[7].a), .pmp_address(io_pmpaddr[7]), .match(match[7]), .size(io_size));
+	pmp_cfg_block pmp8 (.address(io_addr), .pmp_pre_address(io_pmpaddr[7]), .mode(io_pmpcfg[8].a), .pmp_address(io_pmpaddr[8]), .match(match[8]), .size(io_size));
+	pmp_cfg_block pmp9 (.address(io_addr), .pmp_pre_address(io_pmpaddr[8]), .mode(io_pmpcfg[9].a), .pmp_address(io_pmpaddr[9]), .match(match[9]), .size(io_size));
+	pmp_cfg_block pmp10 (.address(io_addr), .pmp_pre_address(io_pmpaddr[9]), .mode(io_pmpcfg[10].a), .pmp_address(io_pmpaddr[10]), .match(match[10]), .size(io_size));
+	pmp_cfg_block pmp11 (.address(io_addr), .pmp_pre_address(io_pmpaddr[10]), .mode(io_pmpcfg[11].a), .pmp_address(io_pmpaddr[11]), .match(match[11]), .size(io_size));
+	pmp_cfg_block pmp12 (.address(io_addr), .pmp_pre_address(io_pmpaddr[11]), .mode(io_pmpcfg[12].a), .pmp_address(io_pmpaddr[12]), .match(match[12]), .size(io_size));
+	pmp_cfg_block pmp13 (.address(io_addr), .pmp_pre_address(io_pmpaddr[12]), .mode(io_pmpcfg[13].a), .pmp_address(io_pmpaddr[13]), .match(match[13]), .size(io_size));
+	pmp_cfg_block pmp14 (.address(io_addr), .pmp_pre_address(io_pmpaddr[13]), .mode(io_pmpcfg[14].a), .pmp_address(io_pmpaddr[14]), .match(match[14]), .size(io_size));
+	pmp_cfg_block pmp15 (.address(io_addr), .pmp_pre_address(io_pmpaddr[14]), .mode(io_pmpcfg[15].a), .pmp_address(io_pmpaddr[15]), .match(match[15]), .size(io_size));
 
 
+	assign io_exception = io_exception_reg;
+	
+	
 	int i;
 	
 	always@(*)
@@ -69,6 +72,12 @@ module PMP #(
 			else 
 				check[i] = 1'b1;
 		end
+		
+		
+		//for(i=0; i<16; i++)
+		//begin
+		//	check[i]=match[i];
+		//end
 			
 		casex(check)
 			16'bxxxxxxxx_xxxxxxx1:begin 
@@ -165,9 +174,6 @@ module PMP #(
 	
 	always@(*)
 	begin
-
-		
-
 			if(!no_match)
 				if(io_req && (io_prv == M_MODE) && (io_pmpcfg[priority_pmp].l == 1'b1) ) begin
 					if( (io_pmpcfg[priority_pmp].w & io_w) || (io_pmpcfg[priority_pmp].r & io_r) || (io_pmpcfg[priority_pmp].x & io_x) )
@@ -200,15 +206,90 @@ module PMP #(
 				io_exception_reg=1'b1;
 	
 	
-  end  
+	end  
   
+	logic check_ex = 1'b0;
+	logic [4:0] logic_priority_pmp;
+	logic logic_no_match;
+	int j;
+	
+	always_comb
+	begin
+	for(j=15; j>=0; j--)begin
+		if(match[j]==1) begin
+			logic_priority_pmp=j;
+			logic_no_match=1'b0;
+		end
+		
+		else begin
+			logic_priority_pmp=15;
+			logic_no_match=1'b1;
+		end
+	end
+	
+		assert(logic_priority_pmp==priority_pmp);
+		assert(logic_no_match==no_match);
+		
+	
 
-		assign io_exception = io_exception_reg;
+		if(io_req == 1'b1 && io_prv != 2'b10)
+		begin
+			
+			if(io_prv == M_MODE)
+			begin
+				//for(int i=0; i<PMP_CNT; i++)
+				//begin
+					if(io_pmpcfg[logic_priority_pmp].l == 1'b1)begin
+						if(io_pmpcfg[logic_priority_pmp].a != A0_OFF)
+							check_ex = 1'b1;
+						else
+							check_ex = 1'b0;
+					end
+					
+					else begin
+						check_ex = 1'b0;
+					end
+					
+
+					if(check_ex == 1'b1) begin
+						if( (io_pmpcfg[logic_priority_pmp].w & io_w) || (io_pmpcfg[logic_priority_pmp].r & io_r) || (io_pmpcfg[logic_priority_pmp].x & io_x) )
+							assert(io_exception == 1'b0);
+						else
+							assert(io_exception == 1'b1);
+					end
+				//end
+			end
+
+			
+			else  //else if(io_prv == U_MODE || io_prv == S_MODE)  // U_MODE or S_MODE
+			begin
+	
+					if(io_pmpcfg[logic_priority_pmp].a != A0_OFF) begin
+						check_ex = 1'b1;
+					end
+					
+					else begin
+						check_ex = 1'b0;
+					end
+					
+					if(check_ex == 1'b1) begin
+						if( (io_pmpcfg[logic_priority_pmp].w & io_w) || (io_pmpcfg[logic_priority_pmp].r & io_r) || (io_pmpcfg[logic_priority_pmp].x & io_x) )
+							assert(io_exception == 1'b0);
+						else
+							assert(io_exception == 1'b1);
+					end
+				//end
+			end
+
+		end
 	
 	
-
-
-
+	
+	end
+	
+	
+	
+	
 	
 	
 endmodule
