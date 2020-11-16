@@ -353,14 +353,14 @@ module tinyriscv(
         .S_MODE( 2'b01),
         .M_MODE( 2'b11)
     ) u_pmp(
-        // .clk(clk),
+        // .clk(clk),  & 32'hefffffff
         // .rst(rst),
         .io_pmpcfg(pmp_pmpcfg),
         .io_pmpaddr(pmp_pmpaddr),
         .io_prv(pmp_prv),
         .io_req(1),
         .io_addr({rib_ex_addr_o, 2'b00}),
-        .io_size(2'd3),
+        .io_size(2'd1),
         .io_r((ex_mem_we_o == `WriteEnable)? 0 : 1),
         .io_w((ex_mem_we_o == `WriteEnable)? 1 : 0),
         .io_x(0),

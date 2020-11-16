@@ -207,7 +207,7 @@ module PMP #(
 	
 	
 	end  
-  
+  /*
 	logic check_ex = 1'b0;
 	logic [4:0] logic_priority_pmp;
 	logic logic_no_match;
@@ -290,7 +290,7 @@ module PMP #(
 	
 	
 	
-	
+	*/
 	
 endmodule
 

@@ -143,7 +143,7 @@
 
 `define RomNum 2048  // rom depth(how many words)
 
-`define MemNum 2048  // memory depth(how many words)
+`define MemNum 1048576  // memory depth(how many words)
 `define MemBus 31:0
 `define MemAddrBus 31:0
 

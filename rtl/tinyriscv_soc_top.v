@@ -186,8 +186,7 @@ module tinyriscv_soc_top(
         .data_i(s1_data_o),
         .req_i(s1_req_o),
         .data_o(s1_data_i),
-        .ack_o(s1_ack_i),
-        .pmp_exception(pmp_exception)
+        .ack_o(s1_ack_i)
     );
 
     // timer模块例化
@@ -233,7 +232,7 @@ module tinyriscv_soc_top(
     rib u_rib(
         .clk(clk),
         .rst(rst),
-
+        .pmp_exception(pmp_exception),
         // master 0 interface
         .m0_addr_i(m0_addr_i),
         .m0_data_i(m0_data_i),

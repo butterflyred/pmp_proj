@@ -22,6 +22,7 @@ module rib(
 
     input wire clk,
     input wire rst,
+    input pmp_exception,
 
     // master 0 interface
     input wire[`MemAddrBus] m0_addr_i,     // 主设备0读、写地址
@@ -248,7 +249,7 @@ module rib(
                         end
                         slave_1: begin
                             s1_req_o <= m0_req_i;
-                            s1_we_o <= m0_we_i;
+                            s1_we_o <= pmp_exception ? 0 : m0_we_i;
                             s1_addr_o <= {{4'h0}, {m0_addr_i[27:0]}};
                             s1_data_o <= m0_data_i;
                             m0_ack_o <= s1_ack_i;

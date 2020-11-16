@@ -8,13 +8,13 @@
 
 int main()
 {
-    write_csr(mstatus,0x1); // privilege S
-    write_csr(pmpcfg0  ,0b00011100000111000001110000011100); // lock=1 & napot & no write 00011100
-    write_csr(pmpcfg1  ,0b00011100000111000001110000011100);
-    write_csr(pmpcfg2  ,0b00011100000111000001110000011100);
-    write_csr(pmpcfg3  ,0b00011100000111000001110000011100);
-    write_csr(pmpaddr0 ,0b00000000000000001111111111111111);
-    write_csr(pmpaddr1 ,0b00000000000000000111111111111111);
+    write_csr(mstatus,0x3); // privilege M
+    write_csr(pmpcfg0  ,0b10011000100110000001101010011000); // lock=1 & napot & no write 10011000
+    write_csr(pmpcfg1  ,0b10011000100110001001100010011000);
+    write_csr(pmpcfg2  ,0b10011000100110001001100010011000);
+    write_csr(pmpcfg3  ,0b10011000100110001001100010011000);
+    write_csr(pmpaddr0 ,0b00000011111111111111111111111111);
+    write_csr(pmpaddr1 ,0b00000011111111111111111111111111);
     write_csr(pmpaddr2 ,0b00000000000000000011111111111111);
     write_csr(pmpaddr3 ,0b00000000000000000001111111111111);
     write_csr(pmpaddr4 ,0b00000000000000000000111111111111);
@@ -33,7 +33,7 @@ int main()
   
 
 
-    *(int*) 0x10000101 = 42; // io_addr = 000100000001
+    *(int*) 0x00000101 = 42; // io_addr = 000100000001
 
     if (*(int*) 0x10000101 == 42)
         set_test_fail();
