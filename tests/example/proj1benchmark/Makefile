@@ -13,7 +13,7 @@ CFLAGS += -DSIMULATION
 #INCLUDES += -I.
 
 C_SRCS := \
-	case6-3.c \
+	case7.c \
 
 
 COMMON_DIR = ..

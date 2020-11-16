@@ -359,7 +359,7 @@ module tinyriscv(
         .io_pmpaddr(pmp_pmpaddr),
         .io_prv(pmp_prv),
         .io_req(1),
-        .io_addr({rib_ex_addr_o, 2'b00}),
+        .io_addr({rib_ex_addr_o & 32'hefffffff, 2'b00}),
         .io_size(2'd1),
         .io_r((ex_mem_we_o == `WriteEnable)? 0 : 1),
         .io_w((ex_mem_we_o == `WriteEnable)? 1 : 0),

@@ -2,4 +2,5 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
++access+rw
 tinyriscv_soc_tb.sv

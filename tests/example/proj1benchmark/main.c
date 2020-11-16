@@ -12,12 +12,12 @@ int main()
     int array1[2] = {0, 1};
     int *a;
 
-    // illegal address: &array1+0xF00 111100000000 3840
-    a = (&array1 + 480);
+    // illegal address: &array1+0xF0000
+    a = (&array1 + 122880);
 
-    *a = 90;
+    *a = 9;
 
-    if (array1[960] == 90) // 3840 / 4 = 960
+    if (array1[245760] == 9)
         // success to write data at illegal address
         set_test_fail();
     else

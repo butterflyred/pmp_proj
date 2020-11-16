@@ -11,7 +11,7 @@ Disassembly of section .init:
    c:	ff810113          	addi	sp,sp,-8 # 10002000 <_sp>
   10:	00000d13          	li	s10,0
   14:	00000d93          	li	s11,0
-  18:	38000513          	li	a0,896
+  18:	2d400513          	li	a0,724
   1c:	10000597          	auipc	a1,0x10000
   20:	fe458593          	addi	a1,a1,-28 # 10000000 <__bss_start>
   24:	10000617          	auipc	a2,0x10000
@@ -110,23 +110,23 @@ Disassembly of section .text:
  178:	00812623          	sw	s0,12(sp)
  17c:	01010413          	addi	s0,sp,16
  180:	3001d073          	csrwi	mstatus,3
- 184:	919197b7          	lui	a5,0x91919
- 188:	19178793          	addi	a5,a5,401 # 91919191 <_sp+0x81917191>
+ 184:	989827b7          	lui	a5,0x98982
+ 188:	a9878793          	addi	a5,a5,-1384 # 98981a98 <_sp+0x8897fa98>
  18c:	3a079073          	csrw	pmpcfg0,a5
- 190:	919197b7          	lui	a5,0x91919
- 194:	19178793          	addi	a5,a5,401 # 91919191 <_sp+0x81917191>
+ 190:	9898a7b7          	lui	a5,0x9898a
+ 194:	89878793          	addi	a5,a5,-1896 # 98989898 <_sp+0x88987898>
  198:	3a179073          	csrw	pmpcfg1,a5
- 19c:	919197b7          	lui	a5,0x91919
- 1a0:	19178793          	addi	a5,a5,401 # 91919191 <_sp+0x81917191>
+ 19c:	9898a7b7          	lui	a5,0x9898a
+ 1a0:	89878793          	addi	a5,a5,-1896 # 98989898 <_sp+0x88987898>
  1a4:	3a279073          	csrw	pmpcfg2,a5
- 1a8:	919197b7          	lui	a5,0x91919
- 1ac:	19178793          	addi	a5,a5,401 # 91919191 <_sp+0x81917191>
+ 1a8:	9898a7b7          	lui	a5,0x9898a
+ 1ac:	89878793          	addi	a5,a5,-1896 # 98989898 <_sp+0x88987898>
  1b0:	3a379073          	csrw	pmpcfg3,a5
- 1b4:	000107b7          	lui	a5,0x10
- 1b8:	fff78793          	addi	a5,a5,-1 # ffff <__stack_size+0xf7ff>
+ 1b4:	040007b7          	lui	a5,0x4000
+ 1b8:	fff78793          	addi	a5,a5,-1 # 3ffffff <__stack_size+0x3fff7ff>
  1bc:	3b079073          	csrw	pmpaddr0,a5
- 1c0:	000087b7          	lui	a5,0x8
- 1c4:	fff78793          	addi	a5,a5,-1 # 7fff <__stack_size+0x77ff>
+ 1c0:	040007b7          	lui	a5,0x4000
+ 1c4:	fff78793          	addi	a5,a5,-1 # 3ffffff <__stack_size+0x3fff7ff>
  1c8:	3b179073          	csrw	pmpaddr1,a5
  1cc:	000047b7          	lui	a5,0x4
  1d0:	fff78793          	addi	a5,a5,-1 # 3fff <__stack_size+0x37ff>
@@ -155,11 +155,11 @@ Disassembly of section .text:
  22c:	3be1d073          	csrwi	pmpaddr14,3
  230:	3bf0d073          	csrwi	pmpaddr15,1
  234:	100007b7          	lui	a5,0x10000
- 238:	01078793          	addi	a5,a5,16 # 10000010 <__bss_start+0x10>
+ 238:	10178793          	addi	a5,a5,257 # 10000101 <__bss_start+0x101>
  23c:	02a00713          	li	a4,42
  240:	00e7a023          	sw	a4,0(a5)
  244:	100007b7          	lui	a5,0x10000
- 248:	01078793          	addi	a5,a5,16 # 10000010 <__bss_start+0x10>
+ 248:	10178793          	addi	a5,a5,257 # 10000101 <__bss_start+0x101>
  24c:	0007a703          	lw	a4,0(a5)
  250:	02a00793          	li	a5,42
  254:	00f71663          	bne	a4,a5,260 <main+0xec>
@@ -194,53 +194,10 @@ Disassembly of section .text:
  2b8:	01010413          	addi	s0,sp,16
  2bc:	07400793          	li	a5,116
  2c0:	30579073          	csrw	mtvec,a5
- 2c4:	30015073          	csrwi	mstatus,2
- 2c8:	1d1d27b7          	lui	a5,0x1d1d2
- 2cc:	d1d78793          	addi	a5,a5,-739 # 1d1d1d1d <_sp+0xd1cfd1d>
- 2d0:	3a079073          	csrw	pmpcfg0,a5
- 2d4:	1d1d27b7          	lui	a5,0x1d1d2
- 2d8:	d1d78793          	addi	a5,a5,-739 # 1d1d1d1d <_sp+0xd1cfd1d>
- 2dc:	3a179073          	csrw	pmpcfg1,a5
- 2e0:	1d1d27b7          	lui	a5,0x1d1d2
- 2e4:	d1d78793          	addi	a5,a5,-739 # 1d1d1d1d <_sp+0xd1cfd1d>
- 2e8:	3a279073          	csrw	pmpcfg2,a5
- 2ec:	1d1d27b7          	lui	a5,0x1d1d2
- 2f0:	d1d78793          	addi	a5,a5,-739 # 1d1d1d1d <_sp+0xd1cfd1d>
- 2f4:	3a379073          	csrw	pmpcfg3,a5
- 2f8:	3b005073          	csrwi	pmpaddr0,0
- 2fc:	000087b7          	lui	a5,0x8
- 300:	fff78793          	addi	a5,a5,-1 # 7fff <__stack_size+0x77ff>
- 304:	3b179073          	csrw	pmpaddr1,a5
- 308:	000047b7          	lui	a5,0x4
- 30c:	fff78793          	addi	a5,a5,-1 # 3fff <__stack_size+0x37ff>
- 310:	3b279073          	csrw	pmpaddr2,a5
- 314:	000027b7          	lui	a5,0x2
- 318:	fff78793          	addi	a5,a5,-1 # 1fff <__stack_size+0x17ff>
- 31c:	3b379073          	csrw	pmpaddr3,a5
- 320:	000017b7          	lui	a5,0x1
- 324:	fff78793          	addi	a5,a5,-1 # fff <__stack_size+0x7ff>
- 328:	3b479073          	csrw	pmpaddr4,a5
- 32c:	7ff00793          	li	a5,2047
- 330:	3b579073          	csrw	pmpaddr5,a5
- 334:	3ff00793          	li	a5,1023
- 338:	3b679073          	csrw	pmpaddr6,a5
- 33c:	1ff00793          	li	a5,511
- 340:	3b779073          	csrw	pmpaddr7,a5
- 344:	0ff00793          	li	a5,255
- 348:	3b879073          	csrw	pmpaddr8,a5
- 34c:	07f00793          	li	a5,127
- 350:	3b979073          	csrw	pmpaddr9,a5
- 354:	03f00793          	li	a5,63
- 358:	3ba79073          	csrw	pmpaddr10,a5
- 35c:	3bbfd073          	csrwi	pmpaddr11,31
- 360:	3bc7d073          	csrwi	pmpaddr12,15
- 364:	3bd3d073          	csrwi	pmpaddr13,7
- 368:	3be1d073          	csrwi	pmpaddr14,3
- 36c:	3bf0d073          	csrwi	pmpaddr15,1
- 370:	00000013          	nop
- 374:	00c12403          	lw	s0,12(sp)
- 378:	01010113          	addi	sp,sp,16
- 37c:	00008067          	ret
+ 2c4:	00000013          	nop
+ 2c8:	00c12403          	lw	s0,12(sp)
+ 2cc:	01010113          	addi	sp,sp,16
+ 2d0:	00008067          	ret
 
 Disassembly of section .stack:
 

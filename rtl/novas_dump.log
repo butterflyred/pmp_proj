@@ -20,23 +20,22 @@ Runtime environment variables:
 LD_LIBRARY_PATH=/opt/CIC/Synopsys/verdi/2018.09/share/PLI/IUS/linux64
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 LC_MEASUREMENT=en_US.UTF-8
-SSH_CONNECTION=192.168.164.253 45652 192.168.164.103 22
+SSH_CONNECTION=192.168.164.253 42654 192.168.164.103 22
 LESSCLOSE=/usr/bin/lesspipe %s %s
 LC_PAPER=en_US.UTF-8
 LC_MONETARY=en_US.UTF-8
 LANG=en_US.UTF-8
-OLDPWD=/home/chu
 RISCV=/opt/riscv/bin
 LC_NAME=en_US.UTF-8
-XDG_SESSION_ID=602
+XDG_SESSION_ID=722
 USER=chu
-PWD=/home/chu/Desktop/pmp_proj1/rtl
+PWD=/home/chu/Desktop/pmp_proj/rtl
 HOME=/home/chu
-SSH_CLIENT=192.168.164.253 45652 22
+SSH_CLIENT=192.168.164.253 42654 22
 XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
 LC_ADDRESS=en_US.UTF-8
 LC_NUMERIC=en_US.UTF-8
-SSH_TTY=/dev/pts/1
+SSH_TTY=/dev/pts/0
 MAIL=/var/mail/chu
 PAPERSIZE=letter
 FNP_IP_ENV=1
@@ -53,6 +52,7 @@ PATH=/opt/CIC/Synopsys/verdi/2018.09/bin:/opt/CIC/Cadence/INCISIV/INCISIVE_15.20
 LC_IDENTIFICATION=en_US.UTF-8
 LESSOPEN=| /usr/bin/lesspipe %s
 LC_TIME=en_US.UTF-8
+OLDPWD=/home/chu
 _=/opt/CIC/Cadence/INCISIV/INCISIVE_15.20.039/tools.lnx86/bin/64bit/ncverilog
 _IRUNROOT_=/opt/CIC/Cadence/INCISIV/INCISIVE_15.20.039/tools
 CDS_ARCH=lnx86
@@ -62,15 +62,16 @@ IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
 TCL_LIBRARY=/opt/CIC/Cadence/INCISIV/INCISIVE_15.20.039/tools/inca/files/tcl/library
 Runtime command line arguments:
 argv[0]=ncverilog
-argv[1]=tinyriscv_soc_tb.sv
-65 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.060 user,  162.19M sys,  0.00M vm
-66 VC callback profile - scalar:0 vector:0
-67 Mon Nov 16 09:16:52 2020
-68 pliAppInit
-69 FSDB_GATE is disabled.
-70 Enable Parallel Dumping.
-71 pliAppMiscSet: New Sim Round
-72 pliEntryInit
-73 LIBSSCORE=found /opt/CIC/Synopsys/verdi/2018.09/share/PLI/IUS/linux64/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
-74 Sim process exit
+argv[1]=+access+rw
+argv[2]=tinyriscv_soc_tb.sv
+66 profile - 100
+          CPU/Mem usage: 0.040 sys,  0.050 user,  170.69M sys,  0.00M vm
+67 VC callback profile - scalar:0 vector:0
+68 Tue Nov 17 05:14:43 2020
+69 pliAppInit
+70 FSDB_GATE is disabled.
+71 Enable Parallel Dumping.
+72 pliAppMiscSet: New Sim Round
+73 pliEntryInit
+74 LIBSSCORE=found /opt/CIC/Synopsys/verdi/2018.09/share/PLI/IUS/linux64/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+75 Sim process exit

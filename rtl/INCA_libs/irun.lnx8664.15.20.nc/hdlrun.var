@@ -85,5 +85,3 @@ define VIEW_MAP ( $VIEW_MAP \
 )
 define ELAB_SNAPSHOT
 define SNAPSHOT worklib.tinyriscv_soc_tb:sv
-define ELAB_SNAPSHOT
-define SNAPSHOT worklib.tinyriscv_soc_tb:sv
