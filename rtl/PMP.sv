@@ -33,6 +33,7 @@ module PMP #(
 );
 	reg [15:0] check;
 	wire [15:0] match;
+	reg no_match;
 	reg [4:0] priority_pmp;
 	reg io_exception_reg;
 
@@ -61,14 +62,104 @@ module PMP #(
 
 		
 
-			for(i=0; i<16; i++)
-			begin
-						if(match[i] == 0)
-							check[i] = 1'b0;
-						else 
-							check[i] = 1'b1;
-
+		for(i=0; i<16; i++)
+		begin
+			if(match[i] == 0)
+				check[i] = 1'b0;
+			else 
+				check[i] = 1'b1;
+		end
+			
+		casex(check)
+			16'bxxxxxxxx_xxxxxxx1:begin 
+									priority_pmp=0;
+									no_match=1'b0;
+			
 			end
+			16'bxxxxxxxx_xxxxxx10:begin	
+									priority_pmp=1;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxxxxx_xxxxx100:begin 
+									priority_pmp=2;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxxxxx_xxxx1000:begin 
+									priority_pmp=3;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxxxxx_xxx10000:begin 
+									priority_pmp=4;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxxxxx_xx100000:begin 
+									priority_pmp=5;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxxxxx_x1000000:begin 
+									priority_pmp=6;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxxxxx_10000000:begin
+									priority_pmp=7;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxxxx1_00000000:begin
+									priority_pmp=8;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxxx10_00000000:begin 
+									priority_pmp=9;
+									no_match=1'b0;
+			
+			end
+			16'bxxxxx100_00000000:begin 
+									priority_pmp=10;
+									no_match=1'b0;
+			
+			end
+			16'bxxxx1000_00000000:begin 
+									priority_pmp=11;
+									no_match=1'b0;
+			
+			end
+			16'bxxx10000_00000000:begin 
+									priority_pmp=12;
+									no_match=1'b0;
+			
+			end
+			16'bxx100000_00000000:begin 
+									priority_pmp=13;
+									no_match=1'b0;
+			
+			end
+			16'bx1000000_00000000:begin 
+									priority_pmp=14;
+									no_match=1'b0;
+			
+			end
+			16'b10000000_00000000:begin 
+									priority_pmp=15;
+									no_match=1'b0;
+			
+			end
+			default:begin
+						priority_pmp=15;
+						no_match=1'b1;
+					end
+		endcase
+	
+	
+	
+	
 	end
 	
 	
@@ -77,8 +168,8 @@ module PMP #(
 
 		
 
-			
-				if(io_req && (io_prv == M_MODE) && (io_pmpcfg[priority_pmp].l == 1'b1) )
+			if(!no_match)
+				if(io_req && (io_prv == M_MODE) && (io_pmpcfg[priority_pmp].l == 1'b1) ) begin
 					if( (io_pmpcfg[priority_pmp].w & io_w) || (io_pmpcfg[priority_pmp].r & io_r) || (io_pmpcfg[priority_pmp].x & io_x) )
 						io_exception_reg=1'b0;
 							//		if(match[i] == 0)
@@ -87,57 +178,32 @@ module PMP #(
 									//	check[i] = 1'b1;
 					else
 						io_exception_reg=1'b1;
-				else if(io_req && (io_prv == M_MODE) && (io_pmpcfg[i].l == 1'b0))
+					end
+					
+				else if(io_req && (io_prv == M_MODE) && (io_pmpcfg[priority_pmp].l == 1'b0)) begin
 					io_exception_reg=1'b0;
-
-				
+					end
 			
-				else if((io_req && (io_prv == S_MODE)) || (io_req && (io_prv == U_MODE)) ) //may delete
+				else if((io_req && (io_prv == S_MODE)) || (io_req && (io_prv == U_MODE)) ) begin
 					if( (io_pmpcfg[priority_pmp].w & io_w) || (io_pmpcfg[priority_pmp].r & io_r) || (io_pmpcfg[priority_pmp].x & io_x) )
-												io_exception_reg=1'b0;
+						io_exception_reg=1'b0;
 						//if(match[i] == 0)
 						//	check[i] = 1'b0;
 						//else
 						//	check[i] = 1'b1;
 					else
-												io_exception_reg=1'b1;
+						io_exception_reg=1'b1;
+					end
 				else  //req != 1
-												io_exception_reg=1'b1;
-			
+						io_exception_reg=1'b1;
+			else //do not have any match
+				io_exception_reg=1'b1;
 	
 	
   end  
   
-  
-  
-  
-	assign io_exception = io_exception_reg;
-	
-	
-	always@(*)
-	begin
-		casex(check)
-		16'bxxxxxxxx_xxxxxxx1:priority_pmp=0;
-		16'bxxxxxxxx_xxxxxx10:priority_pmp=1;
-		16'bxxxxxxxx_xxxxx100:priority_pmp=2;
-		16'bxxxxxxxx_xxxx1000:priority_pmp=3;
-		16'bxxxxxxxx_xxx10000:priority_pmp=4;
-		16'bxxxxxxxx_xx100000:priority_pmp=5;
-		16'bxxxxxxxx_x1000000:priority_pmp=6;
-		16'bxxxxxxxx_10000000:priority_pmp=7;
-		16'bxxxxxxx1_00000000:priority_pmp=8;		
-		16'bxxxxxx10_00000000:priority_pmp=9;
-		16'bxxxxx100_00000000:priority_pmp=10;
-		16'bxxxx1000_00000000:priority_pmp=11;
-		16'bxxx10000_00000000:priority_pmp=12;
-		16'bxx100000_00000000:priority_pmp=13;
-		16'bx1000000_00000000:priority_pmp=14;
-		16'b10000000_00000000:priority_pmp=15;
-		endcase
-		
-	end
 
-	
+		assign io_exception = io_exception_reg;
 	
 	
 

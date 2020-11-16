@@ -551,7 +551,7 @@ module tinyriscv_soc_tb;
     initial begin
         $dumpfile("tinyriscv_soc_tb.vcd");
         $dumpvars(0, tinyriscv_soc_tb);
-        $monitor("addr = %32b , data = %d",tinyriscv_soc_top_0.u_ram.addr_i,tinyriscv_soc_top_0.u_ram.data_i);
+        // $monitor("addr = %32b , data = %d",tinyriscv_soc_top_0.u_ram.addr_i,tinyriscv_soc_top_0.u_ram.data_i);
     end
 
     tinyriscv_soc_top tinyriscv_soc_top_0(

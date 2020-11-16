@@ -31,11 +31,16 @@ int main()
     write_csr(pmpaddr15,0b00000000000000000000000000000001); //  100 ~ 000
 
   
+  
+    int array1[2] = {0, 1};
+    int *a;
 
+    // illegal address: &array1+0xF0000
+    a = (&array1 + 122880);
 
-    *(int*) 0x10000101 = 42; // io_addr = 000100000001
+    *a = 9;
 
-    if (*(int*) 0x10000101 == 42)
+    if (array1[245760] == 9)
         set_test_pass();
     else
         set_test_fail();

@@ -61,7 +61,7 @@ module pmp_cfg_block (address, pmp_pre_address, mode, pmp_address, match, size);
 				32'bxxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxx011: pmp_address_NAPOT_ub = (pmp_address & 32'b11111111_11111111_11111111_11111000) + (1<<3);			
 				32'bxxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxx01: pmp_address_NAPOT_ub = (pmp_address & 32'b11111111_11111111_11111111_11111100) + (1<<2);			
 				32'bxxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxx0: pmp_address_NAPOT_ub = (pmp_address & 32'b11111111_11111111_11111111_11111110) + (1<<1);
-				default:pmp_address_NAPOT_ub = 0;
+				//default:pmp_address_NAPOT_ub = 0;
 		endcase
 					
 		casex(pmp_address)
@@ -98,7 +98,7 @@ module pmp_cfg_block (address, pmp_pre_address, mode, pmp_address, match, size);
 				32'bxxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxx011: pmp_address_NAPOT_lb = (pmp_address & 32'b11111111_11111111_11111111_11111000);			
 				32'bxxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxx01: pmp_address_NAPOT_lb = (pmp_address & 32'b11111111_11111111_11111111_11111100);			
 				32'bxxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxx0: pmp_address_NAPOT_lb = (pmp_address & 32'b11111111_11111111_11111111_11111110);
-				default:pmp_address_NAPOT_lb = 0;
+				//default:pmp_address_NAPOT_lb = 0;
 		endcase
 		
 		
@@ -137,38 +137,38 @@ module pmp_cfg_block (address, pmp_pre_address, mode, pmp_address, match, size);
 					match = 1'b0;
 			end
 				
-			default:match = 1'b0;
+			//default:match = 1'b0;
 		endcase
 	end
 
-always_comb
-  begin
-	
-	case(mode)
-		A0_OFF: begin
-		                assert(match==1'b0);
-		end
+	always_comb
+	begin
 		
-		A1_TOR: begin
-			if(match==1'b1)
-				assert(address[33:2] >= pmp_pre_address && (address[33:2]+data_size-1) < pmp_address);
-			else
-				assert(address[33:2] < pmp_pre_address || (address[33:2]+data_size-1) >= pmp_address);
-		end
-		
-		A2_NA4: begin
-			if(match==1'b1)
-				assert(address[33:2] >= pmp_address && (address[33:2]+data_size-1) < pmp_address_NA4);
-			else
-				assert(address[33:2] < pmp_address || (address[33:2]+data_size-1) >= pmp_address_NA4);
-		end
-		
-		A3_NAPOT: begin
-			if(match==1'b1)
-				assert(address[33:2] >= pmp_address_NAPOT_lb && (address[33:2]+data_size-1) < pmp_address_NAPOT_ub);
-			else
-				assert(address[33:2] < pmp_address_NAPOT_lb || (address[33:2]+data_size-1) >= pmp_address_NAPOT_ub);
-		end
-	endcase
-  end
+		case(mode)
+			A0_OFF: begin
+							assert(match==1'b0);
+			end
+			
+			A1_TOR: begin
+				if(match==1'b1)
+					assert(address[33:2] >= pmp_pre_address && (address[33:2]+data_size-1) < pmp_address);
+				else
+					assert(address[33:2] < pmp_pre_address || (address[33:2]+data_size-1) >= pmp_address);
+			end
+			
+			A2_NA4: begin
+				if(match==1'b1)
+					assert(address[33:2] >= pmp_address && (address[33:2]+data_size-1) < pmp_address_NA4);
+				else
+					assert(address[33:2] < pmp_address || (address[33:2]+data_size-1) >= pmp_address_NA4);
+			end
+			
+			A3_NAPOT: begin
+				if(match==1'b1)
+					assert(address[33:2] >= pmp_address_NAPOT_lb && (address[33:2]+data_size-1) < pmp_address_NAPOT_ub);
+				else
+					assert(address[33:2] < pmp_address_NAPOT_lb || (address[33:2]+data_size-1) >= pmp_address_NAPOT_ub);
+			end
+		endcase
+	end
 endmodule

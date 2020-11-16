@@ -1,7 +1,7 @@
 ncverilog(64): 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
 Recompiling... reason: file './PMP.sv' is newer than expected.
-	expected: Sun Nov 15 17:14:29 2020
-	actual:   Mon Nov 16 01:15:35 2020
+	expected: Mon Nov 16 08:11:53 2020
+	actual:   Mon Nov 16 08:16:13 2020
 file: tinyriscv_soc_tb.sv
 // 核心中断管理、仲裁模块
    |
@@ -16623,10 +16623,8 @@ ncvlog: *W,NONPRT (pc_reg.v,45|18): non-printable character (0x8a) ignored.
                    |
 ncvlog: *W,NONPRT (pc_reg.v,45|19): non-printable character (0xa0) ignored.
 (`include file: pc_reg.v line 45, file: tinyriscv_soc_tb.sv line 24)
-			logic check_ex = 1'b0;
-			               |
-ncvlog: *W,VARIST (PMP.sv,149|18): Local static variable with initializer requires 'static' keyword.
-(`include file: PMP.sv line 149, file: tinyriscv_soc_tb.sv line 25)
+	module worklib.PMP:sv
+		errors: 0, warnings: 0
 // 通用寄存器模块
    |
 ncvlog: *W,NONPRT (regs.v,19|3): non-printable character (0xe9) ignored.
@@ -20900,55 +20898,298 @@ ncelab: *W,CUVMPW (./tinyriscv.sv,365|43): port sizes differ in port connection 
         .io_x(0),
               |
 ncelab: *W,CUVMPW (./tinyriscv.sv,366|14): port sizes differ in port connection (32/1).
-	pmp_cfg_block pmp0 (.address(io_addr[33:2]), .pmp_pre_address(0), .mode(io_pmpcfg[0].a), .pmp_address(io_pmpaddr[0]), .match(match[0]), .size(io_size));
+	pmp_cfg_block pmp0 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[0]) ,.pmp_pre_address(io_pmpaddr[0]), .mode(io_pmpcfg[0].a), .pmp_address(io_pmpaddr[0]), .match(match[0]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,39|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp1 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[0]), .mode(io_pmpcfg[1].a), .pmp_address(io_pmpaddr[1]), .match(match[1]), .size(io_size));
+	pmp_cfg_block pmp1 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[1]) ,.pmp_pre_address(io_pmpaddr[1]), .mode(io_pmpcfg[1].a), .pmp_address(io_pmpaddr[1]), .match(match[1]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,40|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp2 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[1]), .mode(io_pmpcfg[2].a), .pmp_address(io_pmpaddr[2]), .match(match[2]), .size(io_size));
+	pmp_cfg_block pmp2 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[2]) ,.pmp_pre_address(io_pmpaddr[2]), .mode(io_pmpcfg[2].a), .pmp_address(io_pmpaddr[2]), .match(match[2]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,41|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp3 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[2]), .mode(io_pmpcfg[3].a), .pmp_address(io_pmpaddr[3]), .match(match[3]), .size(io_size));
+	pmp_cfg_block pmp3 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[3]) ,.pmp_pre_address(io_pmpaddr[3]), .mode(io_pmpcfg[3].a), .pmp_address(io_pmpaddr[3]), .match(match[3]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,42|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp4 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[3]), .mode(io_pmpcfg[4].a), .pmp_address(io_pmpaddr[4]), .match(match[4]), .size(io_size));
+	pmp_cfg_block pmp4 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[4]) ,.pmp_pre_address(io_pmpaddr[4]), .mode(io_pmpcfg[4].a), .pmp_address(io_pmpaddr[4]), .match(match[4]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,43|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp5 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[4]), .mode(io_pmpcfg[5].a), .pmp_address(io_pmpaddr[5]), .match(match[5]), .size(io_size));
+	pmp_cfg_block pmp5 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[5]) ,.pmp_pre_address(io_pmpaddr[5]), .mode(io_pmpcfg[5].a), .pmp_address(io_pmpaddr[5]), .match(match[5]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,44|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp6 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[5]), .mode(io_pmpcfg[6].a), .pmp_address(io_pmpaddr[6]), .match(match[6]), .size(io_size));
+	pmp_cfg_block pmp6 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[6]) ,.pmp_pre_address(io_pmpaddr[6]), .mode(io_pmpcfg[6].a), .pmp_address(io_pmpaddr[6]), .match(match[6]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,45|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp7 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[6]), .mode(io_pmpcfg[7].a), .pmp_address(io_pmpaddr[7]), .match(match[7]), .size(io_size));
+	pmp_cfg_block pmp7 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[7]) ,.pmp_pre_address(io_pmpaddr[7]), .mode(io_pmpcfg[7].a), .pmp_address(io_pmpaddr[7]), .match(match[7]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,46|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp8 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[7]), .mode(io_pmpcfg[8].a), .pmp_address(io_pmpaddr[8]), .match(match[8]), .size(io_size));
+	pmp_cfg_block pmp8 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[8]) ,.pmp_pre_address(io_pmpaddr[8]), .mode(io_pmpcfg[8].a), .pmp_address(io_pmpaddr[8]), .match(match[8]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,47|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp9 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[8]), .mode(io_pmpcfg[9].a), .pmp_address(io_pmpaddr[9]), .match(match[9]), .size(io_size));
+	pmp_cfg_block pmp9 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[9])  ,.pmp_pre_address(io_pmpaddr[9]), .mode(io_pmpcfg[9].a), .pmp_address(io_pmpaddr[9]), .match(match[9]), .size(io_size));
 	                                   |
 ncelab: *W,CUVMPW (./PMP.sv,48|36): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp10 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[9]), .mode(io_pmpcfg[10].a), .pmp_address(io_pmpaddr[10]), .match(match[10]), .size(io_size));
+	pmp_cfg_block pmp10 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[10])  ,.pmp_pre_address(io_pmpaddr[10]), .mode(io_pmpcfg[10].a), .pmp_address(io_pmpaddr[10]), .match(match[10]), .size(io_size));
 	                                    |
 ncelab: *W,CUVMPW (./PMP.sv,49|37): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp11 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[10]), .mode(io_pmpcfg[11].a), .pmp_address(io_pmpaddr[11]), .match(match[11]), .size(io_size));
+	pmp_cfg_block pmp11 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[11]) ,.pmp_pre_address(io_pmpaddr[11]), .mode(io_pmpcfg[11].a), .pmp_address(io_pmpaddr[11]), .match(match[11]), .size(io_size));
 	                                    |
 ncelab: *W,CUVMPW (./PMP.sv,50|37): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp12 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[11]), .mode(io_pmpcfg[12].a), .pmp_address(io_pmpaddr[12]), .match(match[12]), .size(io_size));
+	pmp_cfg_block pmp12 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[12]) ,.pmp_pre_address(io_pmpaddr[12]), .mode(io_pmpcfg[12].a), .pmp_address(io_pmpaddr[12]), .match(match[12]), .size(io_size));
 	                                    |
 ncelab: *W,CUVMPW (./PMP.sv,51|37): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp13 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[12]), .mode(io_pmpcfg[13].a), .pmp_address(io_pmpaddr[13]), .match(match[13]), .size(io_size));
+	pmp_cfg_block pmp13 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[13]) ,.pmp_pre_address(io_pmpaddr[13]), .mode(io_pmpcfg[13].a), .pmp_address(io_pmpaddr[13]), .match(match[13]), .size(io_size));
 	                                    |
 ncelab: *W,CUVMPW (./PMP.sv,52|37): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp14 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[13]), .mode(io_pmpcfg[14].a), .pmp_address(io_pmpaddr[14]), .match(match[14]), .size(io_size));
+	pmp_cfg_block pmp14 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[14]) ,.pmp_pre_address(io_pmpaddr[14]), .mode(io_pmpcfg[14].a), .pmp_address(io_pmpaddr[14]), .match(match[14]), .size(io_size));
 	                                    |
 ncelab: *W,CUVMPW (./PMP.sv,53|37): port sizes differ in port connection (32/34).
-	pmp_cfg_block pmp15 (.address(io_addr[33:2]), .pmp_pre_address(io_pmpaddr[14]), .mode(io_pmpcfg[15].a), .pmp_address(io_pmpaddr[15]), .match(match[15]), .size(io_size));
+	pmp_cfg_block pmp15 (.address(io_addr[33:2]), .pmp_pre_cfg(io_pmpcfg[15]) ,.pmp_pre_address(io_pmpaddr[15]), .mode(io_pmpcfg[15].a), .pmp_address(io_pmpaddr[15]), .match(match[15]), .size(io_size));
 	                                    |
 ncelab: *W,CUVMPW (./PMP.sv,54|37): port sizes differ in port connection (32/34).
-	always_comb
-	          |
-ncelab: *E,MULAXX (./PMP.sv,143|11): Multiple drivers to always_comb output variable check_ex detected.
-ncverilog: *E,ELBERR: Error during elaboration (status 1), exiting.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.PMP:sv <0x6428d4bc>
+			streams:   3, words:  4368
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                39      24
+		Registers:             428     218
+		Scalar wires:          119       -
+		Expanded wires:        672       3
+		Vectored wires:        113       -
+		Always blocks:         100      55
+		Initial blocks:          4       4
+		Cont. assignments:      33      54
+		Pseudo assignments:     19      19
+		Assertions:            112       7
+		Compilation units:       1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tinyriscv_soc_tb:sv
+Loading snapshot worklib.tinyriscv_soc_tb:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /opt/CIC/Cadence/INCISIV/INCISIVE_15.20.039/tools/inca/files/ncsimrc
+ncsim> run
+test running...
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp3.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp2.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp1.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp0.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp6.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp5.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp4.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 950 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 950 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 950 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 950 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1010 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1010 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1010 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1010 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1090 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp1.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1090 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp1.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp2.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp2.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1210 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp3.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1210 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp3.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1270 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp4.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1270 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp4.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1310 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp5.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1310 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp5.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1350 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp6.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1350 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp6.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1390 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1390 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1430 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1430 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1470 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1470 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1510 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1510 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1530 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1530 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1550 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1550 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1570 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1570 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1590 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1590 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1610 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1610 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp6.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp5.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp4.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp3.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp2.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp1.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1630 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp0.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp6.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp5.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp4.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp3.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp2.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp1.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1650 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp0.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp6.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp5.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp4.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp3.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp2.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp1.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1830 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp0.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp6.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp5.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp4.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp3.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp2.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp1.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,171): (time 1850 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp0.__assert_7 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2050 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2110 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2110 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2110 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2110 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,164): (time 2170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_5 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,164): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_5 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2870 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,164): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_5 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2890 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,164): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_5 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2970 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,164): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_5 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 2990 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,164): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_5 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3150 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,164): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp15.__assert_5 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp14.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp13.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp12.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp11.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp10.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp9.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp8.__assert_3 has failed 
+ncsim: *E,ASRTST (./pmp_cfg_block.sv,157): (time 3170 NS) Assertion tinyriscv_soc_tb.tinyriscv_soc_top_0.u_tinyriscv.u_pmp.pmp7.__assert_3 has failed 
+~~~~~~~~~~~~~~~~~~~ TEST_FAIL ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~######    ##       #    #     ~~~~~~~~~~
+~~~~~~~~~~#        #  #      #    #     ~~~~~~~~~~
+~~~~~~~~~~#####   #    #     #    #     ~~~~~~~~~~
+~~~~~~~~~~#       ######     #    #     ~~~~~~~~~~
+~~~~~~~~~~#       #    #     #    #     ~~~~~~~~~~
+~~~~~~~~~~#       #    #     #    ######~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fail testnum = 268437504
+csr privilege             = 3
+exception = 0x1
+pmpaddr x          0 = 00000000000000001111111111111111
+pmpcfg  x          0 = 00000000000000000000000000000001
+pmpaddr x          1 = 00000000000000000111111111111111
+pmpcfg  x          1 = 00000000000000000000000000000010
+pmpaddr x          2 = 00000000000000000011111111111111
+pmpcfg  x          2 = 00000000000000000000000000000011
+pmpaddr x          3 = 00000000000000000001111111111111
+pmpcfg  x          3 = 00000000000000000000000000000100
+pmpaddr x          4 = 00000000000000000000111111111111
+pmpcfg  x          4 = 00000000000000000000000000000101
+pmpaddr x          5 = 00000000000000000000011111111111
+pmpcfg  x          5 = 00000000000000000000000000000110
+pmpaddr x          6 = 00000000000000000000001111111111
+pmpcfg  x          6 = 00000000000000000000000000000111
+pmpaddr x          7 = 00000000000000000000000111111111
+pmpcfg  x          7 = 00000000000000000000000000001000
+pmpaddr x          8 = 00000000000000000000000011111111
+pmpcfg  x          8 = 00000000000000000000000000001001
+pmpaddr x          9 = 00000000000000000000000001111111
+pmpcfg  x          9 = 00000000000000000000000000001010
+pmpaddr x         10 = 00000000000000000000000000111111
+pmpcfg  x         10 = 00000000000000000000000000001011
+pmpaddr x         11 = 00000000000000000000000000011111
+pmpcfg  x         11 = 00000000000000000000000000001100
+pmpaddr x         12 = 00000000000000000000000000001111
+pmpcfg  x         12 = 00000000000000000000000000001101
+pmpaddr x         13 = 00000000000000000000000000000111
+pmpcfg  x         13 = 00000000000000000000000000001110
+pmpaddr x         14 = 00000000000000000000000000000011
+pmpcfg  x         14 = 00000000000000000000000000001111
+pmpaddr x         15 = 00000000000000000000000000000001
+pmpcfg  x         15 = 00000000000000000000000000010000
+Simulation complete via $finish(1) at time 3390 NS + 0
+./tinyriscv_soc_tb.sv:517         $finish;
+ncsim> exit
